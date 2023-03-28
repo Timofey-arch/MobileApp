@@ -6,4 +6,4 @@
 ```npm install -g eas-cli```
 
 #### After installing eas you need to asseble apk with this command
-```eas build -p android —profile preview```
+```eas build -p android --profile preview```
