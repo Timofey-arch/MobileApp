@@ -1,4 +1,6 @@
-import { StyleSheet , StatusBar } from "react-native";
+import { StyleSheet , StatusBar , Dimensions} from "react-native";
+
+let screen = Dimensions.get('window').width;
 
 export const styles = StyleSheet.create({
     navBar: {
@@ -6,20 +8,17 @@ export const styles = StyleSheet.create({
         height: '10%',
         backgroundColor: 'green',
         position: 'relative',
-        top: StatusBar.currentHeight,
         flexDirection: 'row',
         justifyContent: 'flex-start',
         alignItems: 'center',
         paddingLeft: 10,
-        elevation: 2,
-        zIndex: 2,
+        elevation: 100,
+        zIndex: 100,
     },
 
     mainContainer: {
-        flex: 1,
         flexDirection: 'column',
         backgroundColor: 'white',
-        alignItems: 'center'
     },
 
     backgroundCircles: {
@@ -37,7 +36,8 @@ export const styles = StyleSheet.create({
     },
 
     recipeContainer: {
-        width: 400,
+        // flex: 1,
+        width: "100%",
         height: 350,
         backgroundColor: 'green',
         justifyContent: 'flex-end',
@@ -72,13 +72,14 @@ export const styles = StyleSheet.create({
 
     sideMenuOpened : {
         position: 'absolute',
-        top: '13.6%',
+        top: '10%',
         width: '80%',
         height: '100%',
         backgroundColor: 'green',
         flexDirection: "column",
         justifyContent: "flex-start",
-        elevation: 3,
+        elevation: 100,
+        zIndex: 100,
     },
 
     sideMenuButton : {
@@ -89,7 +90,7 @@ export const styles = StyleSheet.create({
         borderRadius: 10,
         justifyContent: "center",
         alignItems: "center",
-        fontSize: 50,
+        fontSize: 100,
         color: 'black',
         fontFamily: 'normal',
     },
