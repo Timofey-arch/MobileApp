@@ -1,6 +1,4 @@
-import { StyleSheet , StatusBar , Dimensions} from "react-native";
-
-let screen = Dimensions.get('window').width;
+import { StyleSheet } from "react-native";
 
 export const styles = StyleSheet.create({
     navBar: {
@@ -78,6 +76,7 @@ export const styles = StyleSheet.create({
         backgroundColor: 'green',
         flexDirection: "column",
         justifyContent: "flex-start",
+        alignItems: 'center',
         elevation: 100,
         zIndex: 100,
     },
@@ -101,5 +100,14 @@ export const styles = StyleSheet.create({
         backgroundColor: 'green',
         width: 50,
         height: 50,
+    },
+
+    profileButton: {
+        alignSelf: 'flex-start',
+        backgroundColor: 'white',
+        padding: 10,
+        marginLeft: 30,
     }
+
+    
 });
