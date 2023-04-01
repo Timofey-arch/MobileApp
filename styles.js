@@ -27,21 +27,20 @@ export const styles = StyleSheet.create({
     },
 
     recipeContainer: {
-        // flex: 1,
         width: "100%",
-        height: 350,
         backgroundColor: 'green',
-        justifyContent: 'flex-end',
+        justifyContent: 'flex-start',
         alignItems: 'center',
         marginBottom: 10,
         marginTop: 60,
-        borderRadius: 50,
-        shadowColor: 'black'
+        shadowColor: 'black',
+        paddingTop: 20,
+        paddingBottom: 20,
     },
 
     button: {
-        width: '50%',
-        height: '10%',
+        width: 300,
+        height: 50,
         backgroundColor: 'white',
         margin: 30,
         borderRadius: 10,
