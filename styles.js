@@ -19,13 +19,6 @@ export const styles = StyleSheet.create({
         backgroundColor: 'white',
     },
 
-    backgroundCircles: {
-        borderRadius: 50,
-        width: '50%',
-        height: '50%',
-        backgroundColor: 'red',
-    },
-
     partOfMenuButton: {
         width: '90%',
         height: '10%',
@@ -108,6 +101,4 @@ export const styles = StyleSheet.create({
         padding: 10,
         marginLeft: 30,
     }
-
-    
 });
