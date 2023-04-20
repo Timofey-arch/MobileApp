@@ -41,8 +41,8 @@ export default function Main(){
 
                     <Image source={{uri: recipeImage}} style={{width: 300, height: 300}}></Image>
 
-                    {recipeIngredients.map((ingredient) => {
-                        return <Text style={{color: 'black', fontSize: 20, alignSelf: 'flex-start'}}> - {ingredient}</Text>
+                    {recipeIngredients.map((ingredient, index) => {
+                        return <Text style={{color: 'black', fontSize: 20, alignSelf: 'flex-start'}}>{index + 1}) - {ingredient}</Text>
                     })}
 
                     <CommonButton onClick={changeRecipeOfDay} title={"Другой рецепт"} style={styles.button}></CommonButton>
