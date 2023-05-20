@@ -16,11 +16,16 @@ export default function SignUp({navigation}){
             <Text style={{color: 'black'}}>password</Text>
             <TextInput secureTextEntry={true} ref={password}></TextInput>
 
-            <CommonButton title={"Log in"} style={{color: 'black'}} onClick={() => {
-                navigation.navigate("Login");
-                db = new Database("http://localhost:8090", "admin", "1234");
-                db.create(email, password);
-            }}></CommonButton>
+            <CommonButton 
+                title={"Log in"}
+                style={{color: 'black'}} 
+                onClick={() => {
+                    navigation.navigate("Login");
+                    db = new Database("http://localhost:8090", "admin", "1234");
+                    db.create(email, password);
+                }}
+            >
+            </CommonButton>
         </View>
     );
 }

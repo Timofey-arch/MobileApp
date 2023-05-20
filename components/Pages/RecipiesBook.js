@@ -11,7 +11,7 @@ export default function RecipiesBook(){
         url: 'https://random-recipes.p.rapidapi.com/ai-quotes/10',
         headers: {
             'X-RapidAPI-Key': '96f6a1e178msha2d3be65e4682a8p18d692jsn9db863df63cd',
-            'X-RapidAPI-Host': 'random-recipes.p.rapidapi.com'
+            'X-RapidAPI-Host': 'random-recipes.p.rapidapi.com',
         }
     };
 
